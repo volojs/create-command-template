@@ -3,17 +3,8 @@ via [volo acquire](https://github.com/volojs/volo/blob/master/volo/acquire/doc.m
 
 To test this command while developing:
 
-1) In a **volo** directory that is a sibling to volo.js, create a JS file that
-is the same name as this project with the following contents (replace
-PROJECTNAME with the name of this project)
+    volo.js acquire symlink:/absolute/path/to/this/directory
 
-In PROJECTNAME.js:
-
-```javascript
-    define(['PROJECTNAME/main'], function (main) {
-        return main;
-    });
-```
-
-2) Create a PROJECTNAME/ symlink that points to the development area for this
-command.
+That will install the command as a symlink inside the **volo** directory which
+is a sibling to volo.js and it will allow you to test out your command more
+easily while keeping the command source in a more convenient location.
