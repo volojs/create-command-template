@@ -23,12 +23,12 @@ define(function (require, exports, module) {
             //return new Error('There was a validation error.');
         },
 
-        run: function (deferred, namedArgs) {
+        run: function (d, v, namedArgs) {
             var success = true;
             if (success) {
-                deferred.resolve('Command is done.');
+                d.resolve('Command is done.');
             } else {
-                deferred.reject(new Error('There was an error.'));
+                d.reject(new Error('There was an error.'));
             }
         }
     };
