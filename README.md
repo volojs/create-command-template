@@ -1,10 +1,14 @@
-This is a [volo](https://github.com/volojs/volo) command, which can be installed
-via [volo acquire](https://github.com/volojs/volo/blob/master/volo/acquire/doc.md).
+## Summary
+This is a sample [volo](https://github.com/volojs/volo) command that can
+be published to npm and used by volofiles if the project's volofile
+does an npm install of this package in its local `node_modules` folder.
 
-To test this command while developing:
+## Testing
 
-    volo.js acquire symlink:/absolute/path/to/this/directory
+Create a symlink at tests/node_modules/{NAME} that points to this directory.
+Then:
 
-That will install the command as a symlink inside the **volo** directory which
-is a sibling to volo.js and it will allow you to test out your command more
-easily while keeping the command source in a more convenient location.
+    cd tests
+    volo {NAME}
+
+That will run the test volofile at `tests/volofile`.

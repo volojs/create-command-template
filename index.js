@@ -1,18 +1,19 @@
-var fs = require('fs');
+var fs = require('fs'),
+    path = require('path');
 
 module.exports = {
     summary: 'A sample volo command that prints a greeting.',
 
     //This is a longer form version of the help. markdown
     //is the suggested file format to use.
-    doc: fs.readFileSync(path.join(__dirname + '/doc.md')),
+    doc: fs.readFileSync(path.join(__dirname + 'doc.md')),
 
     flags: {
         'u': 'upper'
     },
 
     //Optional, validate the arguments
-    validate: validate: function (namedArgs, arg1, arg2) {
+    validate: function (namedArgs, arg1, arg2) {
         if (!arg1) {
             return new Error('Please enter a greeting');
         }
