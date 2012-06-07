@@ -4,6 +4,7 @@ module.exports = {
         [
             'package.json',
             'test/volofile',
+            'doc.md',
             'README.md'
         ].forEach(function (name) {
             v.write(name, v.template(v.read(name), {

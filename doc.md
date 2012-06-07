@@ -1,6 +1,6 @@
 ## Usage
 
-    volo commandname [-u] greeting name
+    volo {NAME} [-u] greeting name
 
 where the valid flags are:
 
@@ -8,12 +8,12 @@ where the valid flags are:
 
 ## Examples
 
-    > volo commandname hello fred
+    > volo {NAME} hello fred
     > hello fred!
 
 Using the -u flag:
 
-    > volo commandname -u hello fred
+    > volo {NAME} -u hello fred
     > HELLO FRED!
 
 ## Notes
