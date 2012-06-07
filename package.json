@@ -1,3 +1,13 @@
 {
-    "main": "main"
+  "name": "filled-in-by-volofile",
+  "version": "0.0.1",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "engines": {
+    "node": ">=0.6.17"
+  }
 }

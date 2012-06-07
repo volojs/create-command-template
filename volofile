@@ -1,0 +1,13 @@
+module.exports = {
+    onCreate: function (d, v, namedArgs, projectName) {
+        //Update the package.json with the projectName.
+        var packageInfo = v.read('package.json');
+        packageInfo.name = projectName;
+        v.write('package.json', JSON.stringify(packageInfo, null, '  '));
+
+        //Remove this volofile.
+        v.rm('volofile');
+
+        d.resolve();
+    }
+};
