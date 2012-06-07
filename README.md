@@ -5,10 +5,10 @@ does an npm install of this package in its local `node_modules` folder.
 
 ## Testing
 
-Create a symlink at tests/node_modules/{NAME} that points to this directory.
+Create a symlink at test/node_modules/{NAME} that points to this directory.
 Then:
 
-    cd tests
+    cd test
     volo {NAME}
 
-That will run the test volofile at `tests/volofile`.
+That will run the test volofile at `test/volofile`.

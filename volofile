@@ -3,7 +3,7 @@ module.exports = {
         //Update the files that reference this project by name.
         [
             'package.json',
-            'tests/volofile',
+            'test/volofile',
             'README.md'
         ].forEach(function (name) {
             v.write(name, v.template(v.read(name), {
