@@ -6,7 +6,7 @@ module.exports = {
 
     //This is a longer form version of the help. markdown
     //is the suggested file format to use.
-    doc: fs.readFileSync(path.join(__dirname, 'doc.md')),
+    doc: fs.readFileSync(path.join(__dirname, 'doc.md'), 'utf8'),
 
     flags: {
         'u': 'upper'
