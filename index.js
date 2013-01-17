@@ -8,6 +8,9 @@ module.exports = {
     //is the suggested file format to use.
     doc: fs.readFileSync(path.join(__dirname, 'doc.md'), 'utf8'),
 
+    //Any flags you want to support. Note, -h is already handled
+    //by volo itself -- volo will print out the text from the "doc"
+    //property.
     flags: {
         'u': 'upper'
     },
